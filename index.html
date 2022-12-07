@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="shadow-lg p-3 mb-3 mt-5 bg-body rounded">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center mt-4 mb-5">
+                    <img src="maturity.jpg" alt="picture" style="width:380px; height: 350px;" />
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12  mt-5 mb-5">
+                    <form action="#" method="GET">
+                        <div style="margin-top: 20px;" class="form-group">
+
+                            <label class="mb-2">Please select type*</label>
+                            <select style="height: 50px;" id="policyType" name="" class="form-select"
+                                aria-label="Default select example">
+                                <option selected value="M">Maturity</option>
+                                <option value="I">Investment</option>
+                                <option value="S">Surrender</option>
+                                <option value="1ST">First SB</option>
+                                <option value="2ND">Second SB</option>
+                                <option value="3RD">Third SB</option>
+                                <option value="4TH">Fourth SB</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input value="9800000347" type="number" id="policyNumber" name="" class="form-control"
+                                style="height: 50px;" placeholder="Enter Policy Number" required>
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <input  type="date" id="dob" name="" class="form-control"
+                                style="height: 50px;" placeholder="Enter Date of birth" required>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button id="showResult" type="submit" class="btn btn-success align-center rounded" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                                style="width: 155px;">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+  <!--=====================================For Sign Up Modal==================================== -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <button type="button" class="btn-close p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+
+                      
+    <div class="container-fluid" id="invoice">
+        <div class="shadow-lg p-3 mb-5 mt-2 bg-body rounded"  >
+
+
+            <h5 class="text-center p-3">All Information</h5>
+
+            <div class="row justify-content-center" style="margin-bottom: 50px;">
+                <div class="col-md-5">
+
+                    <div class="input-group">
+                        <span style="width: 140px; height: 45px; background-color: #03b983fa;"
+                            class="input-group-text text-white">Policy Number:</span>
+                        <input type="text" id="pol_no" aria-label="" class="form-control bg-light" disabled>
+                    </div>
+                    <div class="input-group mt-2">
+                        <span style="width: 140px; height: 45px; background-color: #03b983fa; "
+                            class="input-group-text text-white">Proposer:</span>
+                        <input type="text" id="proposer" aria-label="" class="form-control bg-light" disabled>
+                    </div>
+                    <div class="input-group mt-2">
+                        <span style="width: 140px; height: 45px; background-color: #03b983fa;"
+                            class="input-group-text text-white ">Fund No:</span>
+                        <input type="text" id="fund_no" class="form-control bg-light" disabled>
+                    </div>
+                    <div class="input-group mt-2">
+                        <span style="width: 140px; height: 45px; background-color: #03b983fa; "
+                            class="input-group-text text-white ">Batch No:</span>
+                        <input type="text" id="batch_no" class="form-control bg-light" disabled>
+                    </div>
+
+        
+                </div>
+
+                <div class="col-md-6">
+              
+                    <div class="input-group ">
+                        <span style="width: 140px; height: 45px; background-color: #03b983fa;"
+                            class="input-group-text text-white ">Batch Date:</span>
+                        <input type="text" id="batch_date" class="form-control bg-light" disabled>
+                    </div>
+                    <div class="input-group mt-2">
+                        <span style="width: 140px; height: 45px;font-size: 15px; background-color: #03b983fa; "
+                            class="input-group-text text-white">Lot No:</span>
+                        <input type="text" id="lot_no" class="form-control bg-light" disabled>
+                    </div>
+            
+                    <div class="input-group mt-2">
+                        <span style="width: 140px; height: 45px;font-size: 15px; background-color: #03b983fa; "
+                            class="input-group-text text-white">Payment Info:</span>
+                        <input type="text" id="payment_info" class="form-control bg-light" disabled>
+                    </div>
+
+                    <div class="input-group mt-2">
+                        <span style="width: 140px; height: 45px;font-size: 15px; background-color: #03b983fa; "
+                            class="input-group-text text-white">Ref No:</span>
+                        <input type="text" id="ref" class="form-control bg-light" disabled>
+                    </div>
+
+                    
+                </div>
+
+        
+                <div class="container">
+                    <div class="row justify-content-center mt-3 ">
+                        <div class="col-md-11">
+                         <div class="input-group">
+                             <span style="width: 425px; font-size: 20px; height: 45px; text-align: center; font-weight: bold; background-color: #03b983fa;"
+                                 class="input-group-text text-white text-center">Payment Serial Number:</span>
+                             <input style="font-weight: bold; font-size: 20px;" value="Loading..." type="text" id="sl_no" aria-label="" class="form-control bg-light" disabled>
+                         </div>
+                        </div>
+         
+                     </div>
+
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+        
+    <div class="text-center">
+    <button style="margin-left: 50px" id="download-button" class="btn btn-primary mt-2 ">Download as PDF</button>
+
+    </div>
+    
+    
+    <div>
+    
+    </div>
+    
+    <!-- <div id="invoice" class="p-5">
+    
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    
+    
+    </div> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=====================================For Sign Up Modal==================================== -->
+
+    <script>
+        const button = document.getElementById('download-button');
+
+        function generatePDF() {
+            // Choose the element that your content will be rendered to.
+            const element = document.getElementById('invoice');
+            // Choose the element and save the PDF for your user.
+            html2pdf().from(element).save('statement.pdf');
+        }
+
+        button.addEventListener('click', generatePDF);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        console.clear();
+        $("#showResult").click(function () {
+            var pType = $("#policyType").val();
+            var pNumber = $("#policyNumber").val();
+            // alert(pType);
+            $.ajax({
+                url: "http://202.164.213.67/android/beftn_web.php",
+                method: "GET",
+                data: {
+                    INSTALNO: pType,
+                    POLICY_NO: pNumber
+                },
+                // dataType:'json',
+                success: function (result) {
+
+                    var obj = $.parseJSON(result);
+                    console.log(obj[0]["POLICY_NO"]);
+
+                    // console.log(result);
+
+                    //   alert(result);
+
+
+                //     if (objj[0]["success"] ==1){
+                //     window.location='home.html';
+                // }else {
+                //     sweetAlert("Oops...", "Please Type Valid Information ", "error");
+                // }
+
+                    $('#pol_no').val(obj[0]["POLICY_NO"]);
+                    $('#proposer').val(obj[0]["PROPOSER"]);
+                    $('#beftn').val(obj[0]["BEFTN"]);
+                    $('#bank_name').val(obj[0]["BANK_NAME"]);
+                    $('#branch_name').val(obj[0]["BRANCH_NAME"]);
+                    $('#routing_no').val(obj[0]["ROUT_NO"]);
+                    $('#acc_no').val(obj[0]["ACC_NO"]);
+                    $('#pay_status').val(obj[0]["PAY_STATUS"]);
+                    $('#bank_posting').val(obj[0]["BANK_POSTING_DATE"]);
+
+                    $('#payment_info').val(obj[0]["PAYMENT_INFO"]);
+                    $('#lot_no').val(obj[0]["LOTNO"]);
+                    $('#lot_date').val(obj[0]["LOT_DATE"]);
+                    $('#batch_no').val(obj[0]["BATCHNO"]);
+                    $('#batch_date').val(obj[0]["BATCH_DATE"]);
+                    $('#amount').val(obj[0]["AMOUNT"]);
+                    $('#fund_no').val(obj[0]["FUND_NO"]);
+                    $('#fund_create_date').val(obj[0]["FUND_CREATE_DATE"]);
+                    $('#pay_to').val(obj[0]["PAYTO"]);
+                    $('#return_batch_date').val(obj[0]["RETURN_BATCH_DATE"]);
+                    $('#install_no').val(obj[0]["INSTALNO"]);
+                    $('#beftn_o').val(obj[0]["BEFTN"]);
+                    $('#ref').val(obj[0]["REFNO"]);
+                    $('#com_amt').val(obj[1]["AMOUNT"]);
+                    $('#beftn_amt').val(obj[0]["AMOUNT"]);
+                    var company = $("#com_amt").val();
+                    var beftn = $("#beftn_amt").val();
+                    var total_amt = Number(company) + Number(beftn);;
+
+                    $('#total').val(total_amt);
+
+
+                }
+            });
+        });
+    </script>
+
+    <script>
+        console.clear();
+        $("#showResult").click(function () {
+            var pType = $("#policyType").val();
+            var pNumber = $("#policyNumber").val();
+            // alert(pType);
+            $.ajax({
+                url: "http://202.164.213.67/android/beftns_web.php",
+                method: "GET",
+                data: {
+                    INSTALNO: pType,
+                    POLICY_NO: pNumber
+                },
+                success: function (result) {
+
+                    var objj = $.parseJSON(result);
+                    // console.log(objj);
+                    // console.log(obj[0]["POLICY_NO"]);
+                    // console.log(result);
+                    //alert(result);
+
+                    $('#sl_no').val(objj[0]["SL"]);
+
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+            <!-- html2pdf CDN link -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+                integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

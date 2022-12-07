@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="shadow-lg p-3 mb-3 mt-5 bg-body rounded" style="height: 300px;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center mt-0 mb-5">
+                    <img src="maturity.jpg" alt="picture" style="width:350px; height: 250px;" />
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12  col-12 mt-2 mb-5">
+                    <form action="#" method="GET">
+                  
+                        <br>
+                        <div class="form-group mt-3">
+                             <label class="mb-2">Please Type PR Number*</label>
+
+                            <input value='EP0005588566'  type="text" id="pr_no" name="" class="form-control"
+                                style="height: 40px; width: 300px;" placeholder="Enter PR Number" required>
+                        </div>
+                        <br>
+
+                           <div class="">
+                                <button id="showResult" type="submit" class="btn btn-success align-center rounded" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" style="height: 35px; width: 300px;">Confirm</button>
+                           </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+<!--=====================================For Sign Up Modal==================================== -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="text-end text-white mr-5">
+            <button style="margin-right: 20px; color: white;" type="button" class="btn-close p-2  bg-danger rounded-circle" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+               </div>
+            <div class="modal-body">
+
+
+        <div class="container" id="invoice">
+        
+            <div class=" p-4 mb-5 bg-body rounded border border-mute">
+                <div class="text-center ">
+                    <img class="shadow rounded-circle p-2" style="height: 100px; width: 100px;" src="i.png" alt="">
+                </div>
+                <h3 class="text-success font-weight-bold text-center">Fareast Islami Life Insurance Company Limited</h3>
+                <h6 class="text-center">Head Office: Fareast Tower, 35 Topkhana Road, Dhaka-1000, Tel:(PABX) 9568120, 9573076
+                </h6>
+                <h6 class="text-center"> Email: info@fareastislamilife.com, Web:www.fareastislamilife.com</h6>
+        
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 p-2">
+        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>Serial No.</h6>
+                            </div>
+                        </div> <br />
+                        <div>
+                            <table class="table">
+        
+                                <tbody>
+        
+                                    <td class="col-md-9">Insured:</td>
+                                    <td type="text" class="col-md-3"><input type="text" id="insured" class=" border-0 bg-white"
+                                            disabled> </td>
+        
+                                    <tr>
+                                        <td class="col-md-9">Name of Payor:</td>
+                                        <td type="text" class="col-md-3"><input type="text" id="name_payor"
+                                                class=" border-0 bg-white" disabled> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-9">Mobile No.</td>
+                                        <td type="text" class="col-md-3"><input type="text" id="Mob_no"
+                                                class=" border-0 bg-white" disabled> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-9">Policy/Proposal/Ref No.</td>
+                                        <td type="text" class="col-md-3"><input type="text" id="Pol_no"
+                                                class=" border-0 bg-white" disabled> </td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td class="col-md-9">Product Table/Term </td>
+                                        <td type="text" class="col-md-3"><input type="text" id="Table_id"
+                                                class=" border-0 bg-white" disabled> </td>
+                                    </tr> -->
+                                      <tr>
+                           
+                                    <tr>
+                                        <td class="col-md-9">Commencement Date</td>
+                                        <td type="text" class="col-md-3"><input type="text" id="Pr_date" class=" border-0 bg-white" disabled> </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="col-md-9">Sum Assured</td>
+                                        <td type="text" class="col-md-3"><input type="text" id="Sum_assured"
+                                                class=" border-0 bg-white" disabled> </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="col-md-9">Premium Amount</td>
+                                        <td type="text" class="col-md-3"><input type="text" id="Prem_amt"
+                                                class=" border-0 bg-white" disabled> </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="col-md-9">Recieved Amount</td>
+                                    <td type="text" class="col-md-3"><input type="text" id="rev_amt" class=" border-0 bg-white" disabled> </td>                                    </tr>
+                                    <tr>
+                                        <td class="col-md-9">In Words</td>
+                                        <td class="col-md-3"><i class="fas fa-rupee-sign" area-hidden="true"></i> </td>
+                                    </tr>
+        
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="col-md-6 col-sm-12 p-2">
+        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="text-end">Department Copy</h6>
+                            </div>
+                        </div> <br />
+        
+        
+                        <div>
+                            <table class="table">
+        
+                                <tbody>
+                                    <tr>
+                                        <td class="col-md-7">Receipt No.</td>
+                                <td type="text" class="col-md-5"><input type="text" id="rec_no" class=" border-0 bg-white" disabled> </td>                                    </tr>
+                                    <tr>
+                                        <td class="col-md-7">Receipt Date</td>
+                                <td type="text" class="col-md-5"><input type="text" id="rec_date" class=" border-0 bg-white" disabled> </td>                                    </tr>
+                                    <tr>
+                                        <td class="col-md-9">On Account of</td>
+                                   <td type="text" class="col-md-3"><input type="text" id="ONACC" class=" border-0 bg-white" disabled> </td>                                    </tr>
+                                    <tr>
+                                        <td class="col-md-7">Collection Type</td>
+                                <td type="text" class="col-md-5"><input type="text" id="Prem_type" class=" border-0 bg-white" disabled> </td>
+                                </tr>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-7">Cheque No. & Date</td>
+                                        <td class="col-md-5"><i class="fas fa-rupee-sign" area-hidden="true"></i> null </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="col-md-7">Bank & Branch</td>
+                                        <td class="col-md-5"><i class="fas fa-rupee-sign" area-hidden="true"></i> null </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="col-md-7">Org. Setup</td>
+                                        <td type="text" class="col-md-5"><input type="text" id="setup" class=" border-0 bg-white" disabled> </td>                                    </tr>
+        
+                                    <tr>
+                                        <td class="col-md-7">Office Name/Code</td>
+                                        <td type="text" class="col-md-5"><input type="text" id="off_name" class=" border-0 bg-white" disabled> </td>
+                                        </tr>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="col-md-7">Pol. Status & Pay Mode</td>
+                                        <td class="col-md-5"><i class="fas fa-rupee-sign" area-hidden="true"></i> null </td>
+                                    </tr>
+        
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+        
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+        
+                <div class="row mt-5 mb-3">
+        
+                    <div class="col-md-3">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-9">No. of Installment Paid</td>
+                    <td type="text" class="col-md-5"><input type="text" id="total_paid" class=" border-0 bg-white" disabled> </td>
+                            </tr>
+                        </tbody>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-9">Total Prem. Paid (Tk.)</td>
+                       <td type="text" class="col-md-5"><input type="text" id="TOT_PREMPAID" class=" border-0 bg-white" disabled> </td>
+                            </tr>
+                        </tbody>
+        
+                    </div>
+        
+                    <div class="col-md-3">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-9">Current Due Date</td>
+                                <td class="col-md-3"><i class="fas fa-rupee-sign" area-hidden="true"></i> </td>
+                            </tr>
+                        </tbody>
+        
+                    </div>
+                    <div class="col-md-3">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-9">Next Due Date</td>
+                                <td class="col-md-3"><i class="fas fa-rupee-sign" area-hidden="true"></i> </td>
+                            </tr>
+                        </tbody>
+        
+                    </div>
+        
+        
+        
+                </div>
+        
+        
+        
+        
+            </div>
+        
+        
+        </div>      
+                    <div class="text-center">
+                        <button style="margin-left: 50px" id="download-button" class="btn btn-primary mt-2 ">Download as
+                            PDF</button>
+                    </div>
+                 
+
+
+                <div>
+
+                </div>
+
+    
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--=====================================For Sign Up Modal==================================== -->
+
+<!-- 
+    <div class="text-center">
+        <button style="margin-left: 50px" id="download-button" class="btn btn-primary mt-0 mb-4 ">Download as PDF</button>
+    
+    </div> -->
+
+<script>
+    const button = document.getElementById('download-button');
+
+    function generatePDF() {
+        // Choose the element that your content will be rendered to.
+        const element = document.getElementById('invoice');
+        // Choose the element and save the PDF for your user.
+        html2pdf().from(element).save('statement.pdf');
+    }
+
+    button.addEventListener('click', generatePDF);
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        console.clear();
+        $("#showResult").click(function () {
+            // var pType = $("#policyType").val();
+            var pNumber = $("#pr_no").val();
+            
+            $.ajax({
+                url: "http://202.164.213.67/mat/pr_info.php?#",
+                method: "GET",
+                data: {
+                    // INSTALNO: pType,
+                    PR_NO: pNumber
+                },
+                // dataType:'json',
+                success: function (result) {
+
+                    var obj = $.parseJSON(result);
+                    // console.log(obj[0]["POLICY_NO"]);
+
+                    console.log(obj[0]['Insured']);
+
+                    //   alert(result);
+
+
+                //     if (objj[0]["success"] ==1){
+                //     window.location='home.html';
+                // }else {
+                //     sweetAlert("Oops...", "Please Type Valid Information ", "error");
+                // }
+                    
+                     $('#insured').val(obj[0]["Insured"]);
+                    $('#name_payor').val(obj[0]["Name_payor"]);
+                    $('#Mob_no').val(obj[0]["Mob_no"]);
+                    $('#Pol_no').val(obj[0]["Pol_no"]);
+                    $('#Table_id').val(obj[0]["Table_id"]);
+                    $('#Sum_assured').val(obj[0]["Sum_assured"]);
+                    $('#Prem_amt').val(obj[0]["Life_premium"]);
+                    $('#setup').val(obj[0]["Org_Setup"]);
+                    $('#Pr_date').val(obj[0]["Pr_date"]);
+                    $('#Term').val(obj[0]["Term"]);
+                    $('#rev_amt').val(obj[0]["Prem_amt"]);
+
+                    $('#acc_of').val(obj[0]["Prem_type"]);
+                    $('#rec_date').val(obj[0]["Pr_date"]);
+                    $('#org').val(obj[0]["Org_code"]);
+                    $('#Prem_type').val(obj[0]["Prem_type"]);
+                    $('#rec_no').val(obj[0]["RECPTNO"]);
+                    $('#off_name').val(obj[0]["OFF_NAME"]);
+                    $('#ONACC').val(obj[0]["ONACC"]);
+                    $('#total_paid').val(obj[0]["TOT_INSTPAID"]);
+                    $('#TOT_PREMPAID').val(obj[0]["TOT_PREMPAID"]);
+                    // $('#return_batch_date').val(obj[0]["RETURN_BATCH_DATE"]);
+                    // $('#install_no').val(obj[0]["INSTALNO"]);
+                    // $('#beftn_o').val(obj[0]["BEFTN"]);
+                    // $('#ref').val(obj[0]["REFNO"]);
+                    // $('#com_amt').val(obj[1]["AMOUNT"]);
+                    // $('#beftn_amt').val(obj[0]["AMOUNT"]);
+                    // var company = $("#com_amt").val();
+                    // var beftn = $("#beftn_amt").val();
+                    // var total_amt = Number(company) + Number(beftn);;
+
+                    // $('#total').val(total_amt);
+
+
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("some error");
+                }
+            });
+        });
+    </script>
+
+    <!-- <script>
+        console.clear();
+        $("#showResult").click(function () {
+            var pType = $("#policyType").val();
+            var pNumber = $("#policyNumber").val();
+            // alert(pType);
+            $.ajax({
+                url: "http://202.164.213.67/android/beftns_web.php",
+                method: "GET",
+                data: {
+                    INSTALNO: pType,
+                    POLICY_NO: pNumber
+                },
+                success: function (result) {
+
+                    var objj = $.parseJSON(result);
+                    // console.log(objj);
+                    // console.log(obj[0]["POLICY_NO"]);
+                    // console.log(result);
+                    //alert(result);
+
+                    $('#sl_no').val(objj[0]["SL"]);
+
+                }
+            });
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+<!-- html2pdf CDN link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>

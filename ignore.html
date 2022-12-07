@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="ignorePDF">don't print this to pdf</p>
+    <div >
+        <p>
+            <font size="3" color="red">print this to pdf</font>
+        </p>
+    </div>
+<div class="text-center">
+    <button style="margin-left: 50px" id="download-button" class="btn btn-primary mt-0 mb-4 ">Download as PDF</button>
+
+</div>
+
+</body>
+
+<script>
+        const button = document.getElementById('download-button');
+    const element = document.querySelector('body');
+    html2pdf(element);
+</script>
+<script src="html2pdf.bundle.min.js"></script>
+
+</html>
