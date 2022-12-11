@@ -36,6 +36,7 @@
                         </div>
                         <br>
 
+                
                            <div class="">
                                 <button id="showResult" type="submit" class="btn btn-success align-center rounded" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal" style="height: 35px; width: 300px;">Confirm</button>
@@ -59,11 +60,14 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="text-end text-white mr-5">
-            <button style="margin-right: 20px; color: white;" type="button" class="btn-close p-2  bg-danger rounded-circle" data-bs-dismiss="modal"
+            <button onclick="myFunction()"  style="margin-right: 20px; color: white;" type="button" class="btn-close p-2  bg-danger rounded-circle" data-bs-dismiss="modal"
                 aria-label="Close"></button>
+                <!-- <input type="button" onclick="myFunction()" value="Reset form"> -->
                </div>
+ 
             <div class="modal-body">
 
+<form id="myForm">
 
         <div class="container" id="invoice">
         
@@ -184,8 +188,9 @@
         
                                     <tr>
                                         <td class="col-md-7">Bank & Branch:</td>
-<td type="text" class="col-md-5" style="font-size: 13px;"><input type="text" id="bnk_name" class=" border-0 bg-white"
-        disabled> </td>                                    </tr>
+                                    <td type="text" class="col-md-5" style="font-size: 13px;"><input type="text" id="bnk_name" class=" border-0 bg-white"
+                                            disabled> </td>     
+                                      </tr>
         
                                     <tr> 
                                         <td class="col-md-7">Org. Setup:</td>
@@ -265,13 +270,12 @@
             </div>
         
         
-        </div>      
+        </div>  
+        </form>
                     <div class="text-center">
                         <button style="margin-left: 50px" id="download-button" class="btn btn-primary mt-0 ">Download as
                             PDF</button>
                     </div>
-                 
-
 
                 <div>
 
@@ -381,17 +385,20 @@
                     
 
 
-                         
-                 
-
-
+            
                 },
-                error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    alert("some error");
+                error: function () {
+                    alert("Error");
                 }
             });
         });
     </script>
+
+<script>
+    function myFunction() {
+        document.getElementById("myForm").reset();
+    }
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
